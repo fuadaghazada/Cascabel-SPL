@@ -1,2 +1,8 @@
 # Cascabel-SPL
-Lexical Analyzer and Parser for a Set Programming Language was designed for Programming Languages course project (CS-315) in Bilkent University
+Lexical Analyzer and Parser for a Set Programming Language was designed for Programming Languages course project (CS-315) in Bilkent University.
+
+#### Group Members
+*  *Fuad Aghazada*
+* *Ayberk Tecimer*
+* *Eray Şahin*
+
