@@ -1,0 +1,101 @@
+main begin
+
+
+	@EvenNum = { 2, 4, 6, 8, 10, 12 }
+
+	@OddNum = { 1, 3, 5, 7, 9, 11 } 
+	@ALL = @EvenNum UNION @OddNum
+	@SET_OF_SETS = {@EvenNum, @OddNum}
+	@INTR = @EvenNum INTERSECTION @OddNum
+	@DIFF = @EvenNum SET_DIFFERENCE @OddNum
+	@PRO = @EvenNum CARTESIAN_PRODUCT @OddNum
+	int temp0 = @EvenNum PROPER_SUB_RELATION @Numbers
+	int temp1 = @EvenNum SUB_RELATION @Numbers
+
+	int temp2 = @Numbers SUPER_RELATION @EvenNum
+	int temp3 = 2 ELEMENT @EvenNum
+	int temp4 = @PRO IMPROPER_SUB_RELATION @DIFF
+	
+	@SET1 = @SET2 UNION (@SET3 INTERSECTION @SET4)
+	@SET5 = (@SET6 CARTESIAN_PRODUCT @SET7) UNION @SET8 
+	
+	@Empty = {@0}	#@0 means empty set	
+
+	*mahmut = [1,2,5, "ali", 3.4, temp, @SET_OF_SETS, @PRO]
+
+	int a = *mahmut[2]
+
+	if(*mahmut[5] == 3) begin
+			*mahmut[a] = 3
+	end
+
+	for x in range ( 0, a ) begin
+		int counter = 0
+		while (counter != 7) begin
+				if(counter - 2 == 0) begin
+					int temp1 = 244
+					string random = "ascd23476//--+"
+					print(random)
+				end else begin
+					float temp2 = 24.45378
+					int i = 5
+					while(i >= 1) begin
+						i = i - 1
+					end 
+					i = i + 5 - 4 * 2				
+					println(i)
+				end
+
+				counter = counter + 1
+		end		
+	end
+
+	int abc, e4r, temp
+	float number1, number2
+	number1 = .89 
+
+	int num = 5 * 7 + 1
+	print(num)
+
+	int x
+	print("Enter a number: ")
+	read x
+	print(x + 5)
+
+	void foo () begin
+		print("Hello World")
+	end
+
+	void foo2 (int a, string b) begin
+		if(a <= 3) begin
+			b = "a"
+		end else begin
+			b = "c"
+		end
+		printf(a)	
+	end
+
+	int foo3 () begin
+		int x
+	
+		read x
+
+		return x
+	end	
+
+
+
+
+	foo()
+
+	int par1 = 1		#first paramater for function foo
+	string par2 = "acA"	#second parameter for function foo
+
+
+
+
+	foo(par1, par2)		#calling the function foo
+	foo(1, "acA")		#another way for calling
+
+
+end

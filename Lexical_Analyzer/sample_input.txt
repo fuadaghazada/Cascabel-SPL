@@ -1,0 +1,52 @@
+# This is a sample program written in Cascabel_v_1
+
+@EvenNum = { 2, 4, 6, 8, 10, 12}  		 			# declaration of set
+@OddNum = { 1, 3, 5, 7, 9, 11}  			 		# declaration of set
+@Numbers = { @EvenNum, @OddNum}  	 				# set inside set
+
+@ALL = @EvenNum UNION @OddNum						# union set op
+@INTR = @EvenNum INTERSECTION @OddNum					# intersect set op
+@DIFF = @EvenNum SET_DIFFERENCE @OddNum					# set difference set op
+@PRO = @EvenNum CARTESIAN_PRODUCT @OddNum				# cartesian product op
+@EvenNum SUB_RELATION @Numbers						# subset relation
+@Numbers SUPER_RELATION @EvenNum					# super set relation
+2 ELEMENT_OF @EvenNum							# element set relation
+
+for x in range ( 0, 10 ) 						# for statement
+begin									# beginning of for
+	int counter = 0;						# declaring a variable
+	while (counter != 7)						# while statement
+begin									# beginning of while statement
+if(counter - 2 == 0)							# if statement
+begin									# beginning of if statement
+		int temp1 = 244						# declaring &  assigning var
+		string random = “ascd23476//--+” 			# declaring a string var
+		print(random)						# printing it (string) on console
+end									# end of the if statement
+else									# else statement
+begin									# beginning of else stmnt	
+	float temp2 = 24.45378						# declaring a float var
+int i = 5								# declaring an int var
+while(i >= 1)								# while statement
+begin									# beginning of while stmnt
+i = i - 1								# single expression
+end									# end of while statement
+i = i + 5 - 4 * 2							# expression with terms 
+println(i)								# printing result on screen
+end									# end of else statement
+
+counter = counter + 1							# expression
+end									# end of while statement
+end									# end of for statement
+
+int abc, 3e4r, temp							# declaration without assigning values
+float number1, number2							# declaration without assigning values
+number1 = .89 								# assignment values to identifiers
+
+int num = 5  *  7  +  1							# declaration & assigning to an expression 
+print(num)								# printing the result on the console
+
+int x									# declaring a variable
+print(“Enter a number: ”)						# printing a prompt message
+read x									# taking input from the user in variable ‘x’
+print(x + 5)								# printing x by adding 5 to it
